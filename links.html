@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外部連結 · 星塵實驗室</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:title" content="外部連結 · 星塵實驗室" />
+  <meta property="og:description" content="茶比樂的社群連結總覽" />
+  <meta property="og:url" content="https://stacydust.com/links.html" />
+  <meta property="og:image" content="https://stacydust.com/logo.png" />
+  <meta property="og:locale" content="zh_TW" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .links-wrap {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .link-group {
+      margin-bottom: 2rem;
+    }
+
+    .link-group-label {
+      font-size: 9.5px;
+      letter-spacing: 0.28em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .link-group-label::after {
+      content: '';
+      flex: 1;
+      height: 0.5px;
+      background: var(--border);
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.95rem 1.2rem;
+      margin-bottom: 0.6rem;
+      border: 0.5px solid var(--green-border);
+      border-radius: 4px;
+      background: var(--card-bg);
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, background 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link-btn::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--green-mid), var(--green-light));
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .link-btn.og::before {
+      background: linear-gradient(to bottom, var(--orange), #e09a5a);
+    }
+
+    .link-btn:hover {
+      border-color: rgba(90,150,135,0.45);
+      background: rgba(255,255,255,0.85);
+    }
+
+    .link-btn:hover::before { opacity: 1; }
+
+    .link-btn-left {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .link-platform {
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      color: var(--green);
+      text-transform: uppercase;
+      min-width: 58px;
+    }
+
+    .link-btn.og .link-platform {
+      color: var(--orange);
+    }
+
+    .link-name {
+      font-size: 12.5px;
+      letter-spacing: 0.06em;
+      color: var(--text);
+    }
+
+    .link-arrow {
+      font-size: 11px;
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="site-logo" href="index.html">
+      星塵實驗室
+      <span>Stardust Laboratory</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我</a></li>
+        <li><a href="works.html">作品集</a></li>
+        <li><a href="booth.html">攤位資訊</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <span class="eyebrow">links</span>
+    <h1>外部<em>連結</em></h1>
+
+    <p>茶比樂活躍的平台總覽，歡迎追蹤 👋</p>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="links-wrap">
+
+      <!-- 社群平台 -->
+      <div class="link-group">
+        <div class="link-group-label">社群</div>
+
+        <!-- 把 href 換成你的實際連結，link-name 換成你的帳號名稱 -->
+        <a href="https://twitter.com/" target="_blank" rel="noopener" class="link-btn">
+          <div class="link-btn-left">
+            <span class="link-platform">Twitter</span>
+            <span class="link-name">@你的帳號</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="link-btn">
+          <div class="link-btn-left">
+            <span class="link-platform">Instagram</span>
+            <span class="link-name">@你的帳號</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <!-- 如果有 BlueSky，取消下面的註解並填入連結 -->
+        <!--
+        <a href="https://bsky.app/" target="_blank" rel="noopener" class="link-btn">
+          <div class="link-btn-left">
+            <span class="link-platform">BlueSky</span>
+            <span class="link-name">@你的帳號</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+        -->
+      </div>
+
+      <!-- 創作平台 -->
+      <div class="link-group">
+        <div class="link-group-label">創作</div>
+
+        <a href="https://www.pixiv.net/" target="_blank" rel="noopener" class="link-btn og">
+          <div class="link-btn-left">
+            <span class="link-platform">Pixiv</span>
+            <span class="link-name">你的 Pixiv 名稱</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <!-- 如果有 Booth 通販，取消下面的註解並填入連結 -->
+        <!--
+        <a href="https://booth.pm/" target="_blank" rel="noopener" class="link-btn og">
+          <div class="link-btn-left">
+            <span class="link-platform">Booth</span>
+            <span class="link-name">你的 Booth 店名</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+        -->
+      </div>
+
+      <!-- 新增平台：複製以下格式 -->
+      <!--
+      <div class="link-group">
+        <div class="link-group-label">分類名稱</div>
+
+        <a href="連結網址" target="_blank" rel="noopener" class="link-btn">
+          <div class="link-btn-left">
+            <span class="link-platform">平台名稱</span>
+            <span class="link-name">你的帳號</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
+      -->
+
+    </div>
+
+  </main>
+
+  <footer>
+    <span>© 2025 茶比樂 · Stardust Laboratory</span>
+    <div class="footer-links">
+      <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.pixiv.net/" target="_blank" rel="noopener">Pixiv</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
