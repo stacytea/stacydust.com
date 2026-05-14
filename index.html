@@ -4,49 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>星塵實驗室</title>
-  <link rel="stylesheet" href="style.css">
 
-    <!-- :white_check_mark: Favicon（瀏覽器分頁 icon） -->
+  <!-- Favicon -->
   <link rel="icon" href="logo.png" type="image/png">
-  <link rel="apple-touch-icon" href="logo.png"> <!-- iPhone 加到主畫面用 -->
+  <link rel="apple-touch-icon" href="logo.png">
 
-  <!-- :white_check_mark: Open Graph（社群分享預覽） -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="][" />
-  <meta property="og:description" content="Stardust Laboratory" />
+  <meta property="og:title" content="星塵實驗室" />
+  <meta property="og:description" content="茶比樂的創作個人網站" />
   <meta property="og:url" content="https://stacydust.com/" />
   <meta property="og:site_name" content="星塵實驗室" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/stacytea/stacydust.com/refs/heads/main/logo.png" /> <!-- 改這行 -->
-  <meta property="og:image:width" content="200" />
-  <meta property="og:image:height" content="200" />
+  <meta property="og:image" content="https://stacydust.com/logo.png" />
   <meta property="og:locale" content="zh_TW" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
+    <a class="site-logo" href="index.html">
+      星塵實驗室
+      <span>Stardust Laboratory</span>
+    </a>
     <nav>
-      <a class="site-title" href="index.html">Stardust Laboratory</a>
       <ul>
         <li><a href="index.html" class="active">首頁</a></li>
-        <li><a href="about.html">關於</a></li>
-        <!-- 之後新增頁面，在這裡加 <li><a href="新頁面.html">頁面名稱</a></li> -->
+        <li><a href="about.html">關於我</a></li>
+        <li><a href="works.html">作品集</a></li>
+        <li><a href="booth.html">攤位資訊</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>你好，我是 Stacy</h1>
-    <p class="subtitle"網站搬家整理中</p>
 
-    <hr>
+    <span class="eyebrow">茶比樂 · Chabira</span>
 
-    <p>目前出沒處:<a href="https://www.plurk.com/c82815">請參考噗浪</a></p>
-    <p>不定期更新。</p>
+    <!-- Hero 圖片區：準備好圖片後，刪掉 .hero-img-placeholder，改成 <img src="hero.jpg" alt=""> -->
+    <div class="hero-img">
+      <div class="hero-img-placeholder">
+        <p>Banner Image</p>
+        <small>建議尺寸 1200 × 400px</small>
+      </div>
+    </div>
+
+    <p class="intro">
+      喜歡星際航行與愛麗絲，<br>
+      在宇宙的某個角落做夢、畫畫。<br>
+      偶爾出沒於同人場地。
+    </p>
+
+    <div class="tags">
+      <span class="tag">偶像夢幻祭</span>
+      <span class="tag">月永雷歐 × 瀨名泉</span>
+      <span class="tag og">地縛少年花子君</span>
+    </div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-label">作品與資訊</div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- 滑動卡片 -->
+    <div class="scroll-track">
+
+      <a href="about.html" class="card">
+        <div class="card-num">01</div>
+        <div class="card-badge">about</div>
+        <div class="card-title">關於我</div>
+        <div class="card-desc">創作者介紹<br>社群連結<br>聯絡方式</div>
+      </a>
+
+      <a href="works.html" class="card">
+        <!-- 插畫預覽圖：把下面的 div 換成 <img src="works-thumb.jpg" alt="插畫作品"> -->
+        <div class="card-img">圖片預覽</div>
+        <div class="card-badge">illustration</div>
+        <div class="card-title">插畫作品</div>
+        <div class="card-desc">單圖・系列圖<br>封面插圖</div>
+      </a>
+
+      <a href="doujin.html" class="card og">
+        <!-- 同人誌預覽圖：把下面的 div 換成 <img src="doujin-thumb.jpg" alt="同人誌"> -->
+        <div class="card-img">圖片預覽</div>
+        <div class="card-badge">doujin</div>
+        <div class="card-title">同人誌</div>
+        <div class="card-desc">刊物資訊<br>試閱頁面</div>
+      </a>
+
+      <a href="booth.html" class="card og">
+        <div class="card-num">04</div>
+        <div class="card-badge">booth</div>
+        <div class="card-title">攤位資訊</div>
+        <div class="card-desc">活動場次<br>刊物清單<br>主辦審查用</div>
+      </a>
+
+      <!-- 外部連結卡片：把下面的 href 換成你的實際連結 -->
+      <a href="https://twitter.com/" target="_blank" rel="noopener" class="card">
+        <div class="card-num">05</div>
+        <div class="card-badge">links</div>
+        <div class="card-title">外部連結</div>
+        <div class="card-desc">Twitter / X<br>Pixiv<br>Instagram</div>
+      </a>
+
+    </div>
+
+    <div class="scroll-hint">← 左右滑動瀏覽 →</div>
 
   </main>
 
   <footer>
-    © 2026 Stacydust
+    <span>© 2025 茶比樂 · Stardust Laboratory</span>
+    <div class="footer-links">
+      <!-- 把 href 換成你的實際連結 -->
+      <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.pixiv.net/" target="_blank" rel="noopener">Pixiv</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
   </footer>
 
 </body>
