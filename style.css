@@ -658,3 +658,7 @@ nav a:hover::after {
   width: 100%;
 }
 
+.card:active, .work-item:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
